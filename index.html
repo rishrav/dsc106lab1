@@ -7,15 +7,6 @@
     <title>Rishvik Ravi</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="projects/index.html">Projects</a></li>
-            <li><a href="Rishvik_Ravi.pdf">CV</a></li>
-            <li><a href="contact/index.html">Contact</a></li>
-            <li><a href="https://github.com/rishrav" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        </ul>
-    </nav>
     <section id="introduction">
         <h1>Rishvik Ravi</h1>
         <p>
@@ -84,29 +75,13 @@
             </ul>
         </article>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>See <a href="projects/index.html">Projects</a> for details on selected work.</p>
-        <article>
-            <header>
-                <h3>Chest X-Ray Image Tracing</h3>
-                <p>Machine Learning + Frontend Development Engineer · <time datetime="2025-01">January 2025</time> – <time datetime="2025-03">March 2025</time> · San Diego, CA, USA</p>
-            </header>
-            <ul>
-                <li>Developed and trained deep learning/computer vision models (CNNs in Keras/TensorFlow) to analyze chest X-ray images and detect pneumothorax masses with 92.6% accuracy; engineered preprocessing pipelines in Python/NumPy to handle 10,000+ images.</li>
-                <li>Designed feature engineering algorithms and integrated model predictions into a full-stack prototype React web app with 20+ users; built SQL-backed APIs for real-time query and visualization, enabling clinicians to interact with predictions and track model accuracy.</li>
-            </ul>
-        </article>
-        <article>
-            <header>
-                <h3>Robotics Manufacturing QA System</h3>
-                <p>Software Development + Machine Learning Engineer · <time datetime="2025-04">April 2025</time> – <time datetime="2025-07">July 2025</time> · Cupertino, CA, USA</p>
-            </header>
-            <ul>
-                <li>Created scalable microservices architecture with Flask APIs and Docker containers, enabling operators to upload and analyze screw/weld inspection data with sub-second latency; integrated data pipelines to automate bad/good weld detection across thousands of inspections.</li>
-                <li>Compiled a React/Figma operator dashboard with analytics and visualization layers connected to a PostgreSQL backend, allowing QA teams to monitor defect trends and generate custom reports for more efficient workflow and reduce manual QA time by 22%.</li>
-            </ul>
-        </article>
+    <section id="latest-projects">
+        <h2>Latest Projects</h2>
+        <div class="projects"></div>
+    </section>
+    <section id="github-profile">
+        <h2>GitHub Profile Stats</h2>
+        <div id="profile-stats"></div>
     </section>
     <section id="skills">
         <h2>Skills</h2>
@@ -115,5 +90,7 @@
             <li>Tools: AWS, Azure, CI/CD, LLMs, Pytorch, OOP-OOD, PostgreSQL, MongoDB, Docker, Kubernetes, Git, REST APIs, Linux/Unix, NoSQL, RAG, Pandas, Kafka, REST APIs, Databricks, Snowflake, LangChain, RabbitMQ, MySQL, Vue, AngularJS, GCP, Cursor, Windsurf, Svelte</li>
         </ul>
     </section>
+    <script src="index.js" type="module" defer></script>
+    <script type="module" src="global.js"></script>
 </body>
 </html>

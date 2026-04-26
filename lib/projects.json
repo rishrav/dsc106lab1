@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Chest X-Ray Image Tracing",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Trained CNNs in Keras/TensorFlow on chest X-rays to detect pneumothorax at 92.6% accuracy, with Python/NumPy preprocessing for 10,000+ images. Integrated predictions into a React prototype with SQL-backed APIs so clinicians could explore results and track model performance."
+  },
+  {
+    "title": "Robotics Manufacturing QA System",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built Flask microservices in Docker for screw and weld inspection with sub-second latency and automated good/bad detection across large inspection volumes. Shipped a React/Figma operator dashboard on PostgreSQL for defect trends and custom reports, cutting manual QA time by about 22%."
+  },
+  {
+    "title": "Student Budget Tracker",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Created a web app for students to track spending categories, set monthly limits, and visualize trends with simple charts and summaries."
+  },
+  {
+    "title": "Course Planner Assistant",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built a planner that helps map prerequisite chains and quarter-by-quarter course schedules based on major requirements and user constraints."
+  },
+  {
+    "title": "Recipe Recommendation Engine",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Implemented a recommendation pipeline that scores recipes by user preferences, dietary restrictions, and ingredient overlap."
+  },
+  {
+    "title": "Transit Delay Analyzer",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analyzed public transit data to identify peak delay periods and route bottlenecks, then summarized findings in an interactive dashboard."
+  },
+  {
+    "title": "Campus Event Finder",
+    "year": "2021",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Developed a search and filter interface for campus events with category tags, date filters, and bookmark functionality."
+  },
+  {
+    "title": "Housing Price Explorer",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built a map-first data explorer for neighborhood-level housing prices, trends, and comparisons across selected time ranges."
+  },
+  {
+    "title": "Workout Progress Journal",
+    "year": "2020",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Created a tracker for sets, reps, and personal records with weekly progress snapshots and trend summaries."
+  },
+  {
+    "title": "Climate Data Snapshot Tool",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Prepared a lightweight tool to summarize temperature and precipitation shifts by city using yearly aggregation and anomaly flags."
+  },
+  {
+    "title": "Music Trends Dashboard",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Designed a dashboard to compare top tracks, genres, and audio features over time for exploratory analysis."
+  },
+  {
+    "title": "Volunteer Hours Portal",
+    "year": "2021",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Implemented a portal for logging volunteer activities, verifying entries, and generating semester summary reports."
+  }
+]

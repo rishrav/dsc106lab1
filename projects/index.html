@@ -8,32 +8,14 @@
     <title>Projects</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="index.html" class="current">Projects</a></li>
-            <li><a href="../Rishvik_Ravi.pdf">CV</a></li>
-            <li><a href="../contact/index.html">Contact</a></li>
-            <li><a href="https://github.com/rishrav" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        </ul>
-    </nav>
     <section id="projects">
         <header class="projects-page-header">
-            <h1>My Projects</h1>
+            <h1 class="projects-title">My Projects</h1>
             <p class="projects-lede">Full resume: <a href="../Rishvik_Ravi.pdf">Rishvik_Ravi.pdf</a></p>
         </header>
-        <div class="projects">
-            <article class="project-card">
-                <h3>Chest X-Ray Image Tracing</h3>
-                <div class="project-thumb" role="img" aria-label="Project preview placeholder">IMAGE COMING SOON</div>
-                <p><time datetime="2025-01">January 2025</time>–<time datetime="2025-03">March 2025</time> · machine learning + frontend · San Diego, CA. Trained CNNs in Keras/TensorFlow on chest X-rays to detect pneumothorax at 92.6% accuracy, with Python/NumPy preprocessing for 10,000+ images. Integrated predictions into a React prototype with SQL-backed APIs so clinicians could explore results and track model performance.</p>
-            </article>
-            <article class="project-card">
-                <h3>Robotics Manufacturing QA System</h3>
-                <div class="project-thumb" role="img" aria-label="Project preview placeholder">IMAGE COMING SOON</div>
-                <p><time datetime="2025-04">April 2025</time>–<time datetime="2025-07">July 2025</time> · software + machine learning · Cupertino, CA. Built Flask microservices in Docker for screw and weld inspection with sub-second latency and automated good/bad detection across large inspection volumes. Shipped a React/Figma operator dashboard on PostgreSQL for defect trends and custom reports, cutting manual QA time by about 22%.</p>
-            </article>
-        </div>
+        <div class="projects"></div>
     </section>
+    <script type="module" src="../global.js"></script>
+    <script type="module" src="projects.js"></script>
 </body>
 </html>
