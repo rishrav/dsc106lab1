@@ -85,10 +85,21 @@ export function renderProjects(projects, containerElement, headingLevel = "h2") 
     image.alt = project.title || "Project image";
     image.loading = "lazy";
 
+    const textBlock = document.createElement("div");
+    textBlock.className = "project-text";
+
     const description = document.createElement("p");
     description.textContent = project.description || "";
+    textBlock.appendChild(description);
 
-    article.append(heading, image, description);
+    if (project.year) {
+      const yearEl = document.createElement("p");
+      yearEl.className = "project-year";
+      yearEl.textContent = project.year;
+      textBlock.appendChild(yearEl);
+    }
+
+    article.append(heading, image, textBlock);
     containerElement.appendChild(article);
   }
 }
