@@ -1,5 +1,5 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm";
-import { fetchJSON, renderProjects } from "../global.js";
+import { fetchJSON, renderProjects } from "../global.js?v=5";
 
 const allProjects = (await fetchJSON("../lib/projects.json")) ?? [];
 const projectsContainer = document.querySelector(".projects");
