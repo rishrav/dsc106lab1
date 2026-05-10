@@ -306,3 +306,130 @@ ul.legend {
 #skills ul {
   padding-inline-start: 1.25em;
 }
+
+#meta {
+  margin-block: 1.5em;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+  gap: 0.25em 1.5em;
+  margin: 1em 0 1.5em;
+  padding: 1em 1.25em;
+  border: 1px solid oklch(88% 0.02 220);
+  border-radius: 0.4rem;
+}
+
+.stats dt {
+  margin: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: oklch(45% 0.02 260);
+  font-weight: 600;
+}
+
+.stats dd {
+  margin: 0 0 0.25em;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#chart {
+  margin-block: 1em 2em;
+}
+
+#chart svg {
+  width: 100%;
+  height: auto;
+}
+
+.gridlines line {
+  stroke: oklch(80% 0.01 260 / 0.4);
+  stroke-dasharray: 2 2;
+}
+
+.gridlines path {
+  display: none;
+}
+
+circle {
+  transition:
+    transform 200ms,
+    fill-opacity 200ms,
+    fill 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25em 1em;
+  margin: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info dt {
+  margin: 0;
+  color: oklch(45% 0.02 260);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+dl.info dd {
+  margin: 0;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  padding: 0.85em 1em;
+  background-color: oklch(100% 0 0 / 0.85);
+  color: oklch(20% 0.02 260);
+  border: 1px solid oklch(85% 0.02 260 / 0.6);
+  border-radius: 0.4em;
+  box-shadow: 0 4px 14px oklch(0% 0 0 / 0.18);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+  max-width: 22em;
+  z-index: 1000;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8;
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+#selection-count {
+  margin-block: 0.5em;
+  font-weight: 500;
+}

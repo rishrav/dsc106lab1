@@ -12,6 +12,7 @@ const BASE_PATH =
 const pages = [
   { url: "", title: "Home" },
   { url: "projects/", title: "Projects" },
+  { url: "meta/", title: "Meta" },
   { url: "Rishvik_Ravi.pdf", title: "CV" },
   { url: "contact/", title: "Contact" },
   { url: "https://github.com/rishrav", title: "GitHub" },
